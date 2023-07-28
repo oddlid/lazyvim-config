@@ -5,7 +5,7 @@ return {
       golangci_lint_ls = {
         mason = false,
         settings = {
-          cmd = { "/home/eebbodd/go/bin/golangci-lint-langserver" },
+          cmd = { "/Users/oddee/gopath/bin/golangci-lint-langserver" },
           filetypes = { "go", "gomod" },
           -- init_options = {
           --   command = { "golangci-lint", "run", "--out-format", "json" },
