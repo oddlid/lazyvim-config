@@ -18,7 +18,7 @@ return {
         lsp_inlay_hints = {
           enable = false,
         },
-        gopls_cmd = { "/home/eebbodd/go/bin/gopls" }, -- if you need to specify gopls path and cmd, e.g {"/home/user/lsp/gopls", "-logfile","/var/log/gopls.log" }
+        gopls_cmd = { "/home/oddee/.local/go/bin/gopls" }, -- if you need to specify gopls path and cmd, e.g {"/home/user/lsp/gopls", "-logfile","/var/log/gopls.log" }
         gopls_remote_auto = true, -- add -remote=auto to gopls
         null_ls_document_formatting_disable = true, -- true: disable null-ls formatting
         dap_debug = false, -- set to false to disable dap
