@@ -11,10 +11,12 @@ return {
       require("go").setup({
         lsp_cfg = true,      -- false: do nothing
         lsp_gofumpt = true,  -- true: set default gofmt in gopls format to gofumpt
-        lsp_diag_underline = false,
         lsp_keymaps = false, -- set to false to disable gopls/lsp keymap
         lsp_inlay_hints = {
           enable = false,
+        },
+        diagnostic = {
+          underline = false,
         },
         gopls_cmd = { "/Users/oddee/gopath/bin/gopls" }, -- if you need to specify gopls path and cmd, e.g {"/home/user/lsp/gopls", "-logfile","/var/log/gopls.log" }
         gopls_remote_auto = true,                        -- add -remote=auto to gopls
