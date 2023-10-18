@@ -1,7 +1,7 @@
 return {
   {
     "ray-x/go.nvim",
-    enabled = true,
+    enabled = false,
     dependencies = { -- optional packages
       "ray-x/guihua.lua",
       "neovim/nvim-lspconfig",
@@ -9,8 +9,8 @@ return {
     },
     config = function()
       require("go").setup({
-        lsp_cfg = true,      -- false: do nothing
-        lsp_gofumpt = true,  -- true: set default gofmt in gopls format to gofumpt
+        lsp_cfg = true, -- false: do nothing
+        lsp_gofumpt = true, -- true: set default gofmt in gopls format to gofumpt
         lsp_keymaps = false, -- set to false to disable gopls/lsp keymap
         lsp_inlay_hints = {
           enable = false,
@@ -19,15 +19,15 @@ return {
           underline = false,
         },
         gopls_cmd = { "/home/eebbodd/go/bin/gopls" }, -- if you need to specify gopls path and cmd, e.g {"/home/user/lsp/gopls", "-logfile","/var/log/gopls.log" }
-        gopls_remote_auto = true,                     -- add -remote=auto to gopls
-        null_ls_document_formatting_disable = true,   -- true: disable null-ls formatting
-        dap_debug = false,                            -- set to false to disable dap
-        dap_debug_keymap = false,                     -- true: use keymap for debugger defined in go/dap.lua false: do not use keymap in go/dap.lua.  you must define your own.
-        dap_debug_gui = false,                        -- set to true to enable dap gui, highly recommended
+        gopls_remote_auto = true, -- add -remote=auto to gopls
+        null_ls_document_formatting_disable = true, -- true: disable null-ls formatting
+        dap_debug = false, -- set to false to disable dap
+        dap_debug_keymap = false, -- true: use keymap for debugger defined in go/dap.lua false: do not use keymap in go/dap.lua.  you must define your own.
+        dap_debug_gui = false, -- set to true to enable dap gui, highly recommended
         floaterm = {
-          posititon = "bottom",                       -- one of {`top`, `bottom`, `left`, `right`, `center`, `auto`}
-          width = 1.00,                               -- width of float window if not auto
-          height = 0.50,                              -- height of float window if not auto
+          posititon = "bottom", -- one of {`top`, `bottom`, `left`, `right`, `center`, `auto`}
+          width = 1.00, -- width of float window if not auto
+          height = 0.50, -- height of float window if not auto
         },
         luasnip = true,
         trouble = true,
