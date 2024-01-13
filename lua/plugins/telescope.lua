@@ -20,6 +20,15 @@ return {
         end,
         desc = "Find in Commit",
       },
+      {
+        "<leader>fF",
+        function()
+          require("telescope.builtin").git_files({
+            git_command = { "git", "ls-files", "-x", "vendor/" },
+          })
+        end,
+        desc = "Find Files (exclude vendor/)",
+      },
     },
   },
 }
