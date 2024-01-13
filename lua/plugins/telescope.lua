@@ -14,7 +14,9 @@ return {
       {
         "<leader>fC",
         function()
-          require("telescope.builtin").git_files({ git_command = { "git", "diff", "--name-only", "HEAD^" } })
+          require("telescope.builtin").git_files({
+            git_command = { "git", "diff", "--name-only", "--diff-filter=d", "HEAD^" },
+          })
         end,
         desc = "Find in Commit",
       },
