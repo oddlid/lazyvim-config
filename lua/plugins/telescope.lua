@@ -24,7 +24,7 @@ return {
         "<leader>fF",
         function()
           require("telescope.builtin").git_files({
-            git_command = { "git", "ls-files", "-x", "vendor/" },
+            git_command = { "git", "ls-files", "--", ":!:vendor/*" },
           })
         end,
         desc = "Find Files (exclude vendor/)",
