@@ -1,7 +1,7 @@
 return {
   {
     "ray-x/go.nvim",
-    enabled = true,
+    enabled = false,
     dependencies = { -- optional packages
       "ray-x/guihua.lua",
       "neovim/nvim-lspconfig",
