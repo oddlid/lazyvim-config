@@ -1,6 +1,9 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
+    inlay_hints = {
+      enabled = false,
+    },
     servers = {
       golangci_lint_ls = {
         enabled = true,
