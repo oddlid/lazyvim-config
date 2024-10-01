@@ -1,7 +1,22 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
+    inlay_hints = {
+      enabled = false,
+    },
+    setup = {
+      rust_analyser = function()
+        return true
+      end,
+    },
     servers = {
+      gopls = {
+        mason = false,
+        settings = {
+          cmd = { "/Users/oddee/gopath/bin/gopls", "-remote=auto" },
+          filetypes = { "go", "gomod", "gowork", "gotmpl" },
+        },
+      },
       golangci_lint_ls = {
         mason = false,
         settings = {
