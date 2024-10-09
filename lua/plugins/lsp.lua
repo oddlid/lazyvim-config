@@ -5,6 +5,7 @@ return {
       enabled = false,
     },
     setup = {
+      -- recommended to get mason to shut up, but seems to have no effect at all
       rust_analyser = function()
         return true
       end,
