@@ -4,12 +4,12 @@ return {
     inlay_hints = {
       enabled = false,
     },
-    setup = {
-      -- recommended to get mason to shut up, but seems to have no effect at all
-      rust_analyser = function()
-        return true
-      end,
-    },
+    -- setup = {
+    --   -- recommended to get mason to shut up, but seems to have no effect at all
+    --   rust_analyser = function()
+    --     return true
+    --   end,
+    -- },
     servers = {
       gopls = {
         mason = false,
