@@ -18,7 +18,7 @@ return {
         diagnostic = {
           underline = false,
         },
-        gopls_cmd = { "/Users/oddee/gopath/bin/gopls" }, -- if you need to specify gopls path and cmd, e.g {"/home/user/lsp/gopls", "-logfile","/var/log/gopls.log" }
+        gopls_cmd = { "/home/oddee/gopath/bin/gopls" }, -- if you need to specify gopls path and cmd, e.g {"/home/user/lsp/gopls", "-logfile","/var/log/gopls.log" }
         dap_debug = false, -- set to false to disable dap
         dap_debug_keymap = false, -- true: use keymap for debugger defined in go/dap.lua, false: do not use keymap in go/dap.lua.  you must define your own.
         dap_debug_gui = false, -- set to true to enable dap gui, highly recommended

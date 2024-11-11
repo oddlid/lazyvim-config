@@ -14,14 +14,14 @@ return {
       gopls = {
         mason = false,
         settings = {
-          cmd = { "/Users/oddee/gopath/bin/gopls", "-remote=auto" },
+          cmd = { "/home/oddee/gopath/bin/gopls", "-remote=auto" },
           filetypes = { "go", "gomod", "gowork", "gotmpl" },
         },
       },
       golangci_lint_ls = {
         mason = false,
         settings = {
-          cmd = { "/Users/oddee/gopath/bin/golangci-lint-langserver" },
+          cmd = { "/home/oddee/gopath/bin/golangci-lint-langserver" },
           filetypes = { "go", "gomod" },
           -- init_options = {
           --   command = { "golangci-lint", "run", "--out-format", "json" },
