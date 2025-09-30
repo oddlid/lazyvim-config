@@ -9,6 +9,7 @@ vim.g.solarized_termtrans = 0
 vim.g.snacks_animate = false
 
 -- custom copy/paste to make it work across ssh/mosh/tmux and so on
+-- See: https://github.com/neovim/neovim/discussions/28010
 vim.o.clipboard = "unnamedplus"
 
 local function paste()
