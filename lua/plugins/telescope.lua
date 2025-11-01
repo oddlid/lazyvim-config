@@ -12,7 +12,7 @@ return {
     },
     keys = {
       {
-        "<leader>fC",
+        "<leader>OC", -- think Odd Commit / Ola Conny
         function()
           require("telescope.builtin").git_files({
             git_command = { "git", "diff", "--name-only", "--diff-filter=d", "HEAD^" },
