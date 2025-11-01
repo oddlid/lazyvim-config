@@ -1,0 +1,5 @@
+return {
+  {
+    "vim-caddyfile",
+  },
+}
